@@ -183,7 +183,8 @@ def main():
         #st.success('Stock data scraped and saved to stocks.csv')
 
         # Set OPENAI_API_KEY
-        os.environ["OPENAI_API_KEY"] = Apifile.API
+        #os.environ["OPENAI_API_KEY"] = Apifile.API
+        OPENAI_API_KEY = os.environ.get("API")
 
         st.title("Chatbot")
 
